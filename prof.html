@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Slima | G-Empire Business Solutions</title>
+    <link rel="icon" type="image/svg+xml" href="icone.png">
+    
+    <!-- =========================================================================
+         تحسينات محركات البحث والذكاء الاصطناعي (SEO & AI Search Optimization)
+         ========================================================================= -->
+    <meta name="description" content="Ahmed Slima - B2B Sales & Business Development Expert at G-Empire Solutions. Providing premier business consulting, social media management, and strategic growth partnerships.">
+    <meta name="keywords" content="Ahmed Slima, G-Empire Solutions, Business Development, B2B Sales, Business Consulting, Social Media Management, أحمد سليمة, جي إمباير, تطوير الأعمال, استشارات شركات, مبيعات B2B">
+    <meta name="author" content="G-Empire Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://g-empire.net/">
+
+    <!-- علامات متقدمة لمشاركة الرابط على السوشيال ميديا (Open Graph / Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://g-empire.net/">
+    <meta property="og:title" content="Ahmed Slima | G-Empire Business Solutions">
+    <meta property="og:description" content="Unlock corporate growth through innovative B2B sales strategies and professional business consulting. At G-Empire, we bridge the gap between corporate ambition and results.">
+    <meta property="og:image" content="صوره بروف.jpg">
+    <meta property="og:site_name" content="G-Empire Solutions">
+
+    <!-- علامات منصة X / Twitter Cards -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://g-empire.net/">
+    <meta property="twitter:title" content="Ahmed Slima | G-Empire Business Solutions">
+    <meta property="twitter:description" content="Unlock corporate growth through innovative B2B sales strategies and professional business consulting. At G-Empire, we bridge the gap between corporate ambition and results.">
+    <meta property="twitter:image" content="صوره بروف.jpg">
+
+    <!-- بيانات منظمة وهيكلية تفهمها برمجيات الذكاء الاصطناعي (JSON-LD Structured Data for AI & Google Search) -->
+    <!-- 1. تعريف أحمد سليمة كشخصية خبيرة (Person Entity) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ahmed Slima",
+      "jobTitle": "B2B Sales & Business Development Expert",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "G-Empire Solutions",
+        "url": "https://g-empire.net"
+      },
+      "description": "B2B Sales and Business Development Expert helping companies bridge the gap between corporate ambition and real-world results through strategic planning and deal closing.",
+      "image": "صوره بروف.jpg",
+      "sameAs": [
+        "http://linkedin.com/in/ahmed-slima-383187241" 
+      ]
+    }
+    </script>
+
+    <!-- 2. تعريف وكالة G-Empire كخدمة احترافية (Professional Service Entity) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "G-Empire Solutions",
+      "image": "صوره بروف.jpg",
+      "@id": "https://g-empire.net/#agency",
+      "url": "https://g-empire.net",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cairo",
+        "addressCountry": "EG"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/g-empire-solutions"
+      ],
+      "description": "An integrated agency specialized in providing innovative business solutions, digital marketing services, and B2B systems that put your brand at the forefront."
+    }
+    </script>
+    
+    <!-- =========================================================================
+         الخطوط والمكتبات الخارجية المستخدمة في الموقع
+         ========================================================================= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-yellow: #facc15; 
+            --brand-black: #000000;
+            --zinc-900: #18181b;
+        }
+
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            background-color: var(--brand-black);
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s ease;
+        }
+
+        [lang="ar"] body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(24, 24, 27, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(250, 204, 21, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            border-color: var(--brand-yellow);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -15px rgba(250, 204, 21, 0.25);
+        }
+
+        .client-logo {
+            filter: grayscale(100%) brightness(200%);
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%) brightness(100%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .fb-cover-bg {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('كوفر.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            min-height: 450px;
+        }
+
+        .profile-img-container {
+            width: 180px;
+            height: 180px;
+            border: 5px solid var(--brand-yellow);
+            box-shadow: 0 0 30px rgba(250, 204, 21, 0.4);
+            transition: transform 0.5s ease;
+        }
+        
+        .profile-img-container:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: var(--brand-yellow); border-radius: 4px; }
+
+        .lang-switch-btn {
+            border: 1px solid rgba(250, 204, 21, 0.3);
+            transition: all 0.3s ease;
+        }
+        .lang-switch-btn:hover {
+            background: var(--brand-yellow);
+            color: black;
+            transform: scale(1.05);
+        }
+
+        /* Forces brand styling to stay consistently Left-To-Right */
+        .force-ltr {
+            direction: ltr !important;
+            unicode-bidi: embed;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="fixed w-full z-50 px-6 py-4 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo brand locked to English/LTR style -->
+        <div class="text-2xl font-black flex items-center gap-2 force-ltr">
+            <span class="bg-yellow-400 text-black px-2 rounded">G</span>
+            <span class="hidden sm:inline tracking-tighter">EMPIRE</span>
+        </div>
+        
+        <div class="flex items-center gap-4 md:gap-8">
+            <div class="hidden md:flex gap-6 text-sm font-bold uppercase">
+                <a href="#about" class="hover:text-yellow-400 transition" data-i18n="nav-about">About</a>
+                <a href="#agency" class="hover:text-yellow-400 transition" data-i18n="nav-agency">Agency</a>
+                <a href="#clients" class="hover:text-yellow-400 transition" data-i18n="nav-partners">Partners</a>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <button onclick="toggleLanguage()" class="lang-switch-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase flex items-center gap-2">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-label">AR</span>
+                </button>
+                <a href="#contact" class="bg-yellow-400 text-black px-5 py-1.5 rounded-full text-xs font-bold uppercase shadow-lg shadow-yellow-400/20" data-i18n="nav-contact">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<header id="about" class="relative">
+    <div class="fb-cover-bg flex items-end justify-center pb-12">
+        <div class="text-center" data-aos="zoom-in">
+            <div class="profile-img-container rounded-full overflow-hidden mx-auto mb-6">
+                <img src="صوره بروف.jpg" alt="Ahmed Slima" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mx-auto px-6 -mt-12 relative z-10">
+        <div class="max-w-3xl mx-auto text-center bg-black/80 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/10 shadow-2xl">
+            <h1 class="text-5xl md:text-7xl font-black mb-4">
+                <span data-i18n="hero-name">Ahmed Slima</span><span class="text-yellow-400"></span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-bold text-yellow-400 mb-8 tracking-wide uppercase" data-i18n="hero-title">
+                B2B Sales & Business Development Expert
+            </h2>
+            <p class="text-gray-300 leading-relaxed text-lg md:text-xl italic font-light" data-i18n="hero-desc">
+            I believe that behind every ambitious company lies a story worth telling and an opportunity waiting to be discovered. That is why I strive to build bridges of trust between businesses and the opportunities that can transform their growth journey. At <span class="text-white font-bold">G-Empire</span>, my passion goes beyond finding the right clients; it is about contributing to meaningful partnerships that create lasting impact and deliver enduring value.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-8">
+                <div class="flex items-center gap-3 text-sm font-bold text-gray-400">
+                    <i class="fas fa-chess-knight text-yellow-400 text-xl"></i>
+                    <span data-i18n="feat-strategic">Strategic Planning</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm font-bold text-gray-400">
+                    <i class="fas fa-handshake text-yellow-400 text-xl"></i>
+                    <span data-i18n="feat-b2b">B2B Deal Closing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="agency" class="py-32 bg-zinc-950 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl"></div>
+    
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-20" data-aos="fade-up">
+            <h3 class="text-yellow-400 font-bold tracking-[0.4em] mb-4 text-xs uppercase" data-i18n="agency-subtitle">The Agency</h3>
+            <!-- Agency Brand locked in English LTR styling -->
+            <h2 class="text-5xl md:text-6xl font-black force-ltr">G-EMPIRE <span class="text-yellow-400 ml-2">SOLUTIONS</span></h2>
+            <p class="text-gray-500 mt-6 max-w-2xl mx-auto text-lg" data-i18n="agency-desc">
+                We are an integrated agency specialized in providing innovative business solutions and digital marketing services that put your brand at the forefront.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="glass-card p-10 rounded-[3rem]" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-yellow-400 rounded-2xl flex items-center justify-center mb-10 shadow-lg shadow-yellow-400/20">
+                    <i class="fas fa-briefcase text-black text-2xl"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-5" data-i18n="service-1-title">Business Consulting</h4>
+                <p class="text-gray-400 leading-relaxed" data-i18n="service-1-desc">
+                    In-depth market analysis, administrative structuring, and strategic planning to increase operational efficiency and maximize profits.
+                </p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glass-card p-10 rounded-[3rem] border-yellow-400/30" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-10 shadow-lg shadow-white/10">
+                    <i class="fas fa-share-nodes text-black text-2xl"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-5" data-i18n="service-2-title">Social Media Management</h4>
+                <p class="text-gray-400 leading-relaxed" data-i18n="service-2-desc">
+                    Building a strong digital presence through advanced content strategies and professional management of paid advertising campaigns.
+                </p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glass-card p-10 rounded-[3rem]" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-yellow-400 rounded-2xl flex items-center justify-center mb-10 shadow-lg shadow-yellow-400/20">
+                    <i class="fas fa-chart-line text-black text-2xl"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-5" data-i18n="service-3-title">Business Development</h4>
+                <p class="text-gray-400 leading-relaxed" data-i18n="service-3-desc">
+                    Opening new sales channels, building strategic partnerships, and increasing conversion rates through advanced systems.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="clients" class="py-32 bg-black">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+            <div data-aos="fade-right">
+                <h3 class="text-yellow-400 font-bold mb-3 uppercase tracking-widest text-sm" data-i18n="portfolio-subtitle">Portfolio</h3>
+                <h2 class="text-5xl md:text-6xl font-black leading-tight" data-i18n="portfolio-title">Success Partners <br> & Clients We Served</h2>
+            </div>
+            <div class="text-gray-500 font-bold bg-zinc-900/50 px-8 py-4 rounded-2xl border border-white/5" data-aos="fade-left">
+                <span class="text-yellow-400 text-4xl">15+</span> <span data-i18n="portfolio-count" class="ml-2">Institutions</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <img src="banino.jpg" alt="Client 1" class="client-logo">
+            <img src="the bun.jpg" alt="Client 2" class="client-logo">
+            <img src="TheCrepeCompany.jpg" alt="Client 3" class="client-logo">
+            <img src="عز الشام.jpg" alt="Client 4" class="client-logo">
+            <img src="half milion.jpg" alt="Client 5" class="client-logo">
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-32 bg-zinc-950">
+    <div class="container mx-auto px-6">
+        <div class="bg-yellow-400 rounded-[4rem] p-12 md:p-24 flex flex-col md:flex-row items-center gap-16 overflow-hidden relative">
+            <div class="absolute -right-20 -top-20 text-[25rem] font-black text-black/5 select-none pointer-events-none">HIRE</div>
+            
+            <div class="w-full md:w-1/2 relative z-10" data-aos="fade-up">
+                <h2 class="text-black text-6xl md:text-8xl font-black mb-8 leading-[0.9]" data-i18n="contact-title">Ready to <br> Scale?</h2>
+                <p class="text-black font-bold text-2xl opacity-90 max-w-md" data-i18n="contact-desc">Contact me directly to discuss how G-Empire can transform your business trajectory.</p>
+            </div>
+
+            <div class="w-full md:w-1/2 space-y-6 relative z-10" data-aos="fade-up">
+                <!-- Mail Contact Link -->
+                <a href="mailto:info@g-empire.net" class="flex items-center gap-6 bg-black text-white p-6 rounded-[2rem] hover:scale-[1.02] hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center text-black shadow-lg shadow-yellow-400/20">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 uppercase font-black tracking-widest mb-1" data-i18n="contact-email">Email</div>
+                        <div class="text-xl font-bold group-hover:text-yellow-400 transition">info@g-empire.net</div>
+                    </div>
+                </a>
+
+                <!-- LinkedIn Link -->
+                <a href="https://linkedin.com/in/ahmed-slima-383187241" class="flex items-center gap-6 bg-black text-white p-6 rounded-[2rem] hover:scale-[1.02] hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-600/20">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 uppercase font-black tracking-widest mb-1" data-i18n="contact-linkedin">LinkedIn</div>
+                        <div class="text-xl font-bold group-hover:text-yellow-400 transition">Ahmed Slima</div>
+                    </div>
+                </a>
+
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/+201146747978" class="flex items-center gap-6 bg-black text-white p-6 rounded-[2rem] hover:scale-[1.02] hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-green-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-green-500/20">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-500 uppercase font-black tracking-widest mb-1" data-i18n="contact-whatsapp">WhatsApp</div>
+                        <div class="text-xl font-bold group-hover:text-yellow-400 transition" data-i18n="contact-whatsapp-btn">Send instant message</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-16 border-t border-white/5 text-center bg-black">
+    <div class="container mx-auto px-6">
+        <!-- Footer brand locked in English LTR styling -->
+        <div class="text-3xl font-black mb-10 tracking-tighter force-ltr">
+            <span class="text-yellow-400">G-EMPIRE</span> SOLUTIONS
+        </div>
+        <div class="flex justify-center gap-10 mb-10">
+            <a href="https://www.facebook.com/gempire.egy" class="text-gray-500 hover:text-yellow-400 transition text-2xl hover:scale-125 transition-transform"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/g.empire7" class="text-gray-500 hover:text-yellow-400 transition text-2xl hover:scale-125 transition-transform"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/gempire" class="text-gray-500 hover:text-yellow-400 transition text-2xl hover:scale-125 transition-transform"><i class="fab fa-behance"></i></a>
+        </div>
+        <p class="text-gray-600 text-xs font-bold tracking-[0.3em] uppercase force-ltr">
+            &copy; 2026 ALL RIGHTS RESERVED TO G-EMPIRE SOLUTIONS
+        </p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const translations = {
+        en: {
+            "lang-label": "AR",
+            "nav-about": "About",
+            "nav-agency": "Agency",
+            "nav-partners": "Partners",
+            "nav-contact": "Contact",
+            "hero-name": "Ahmed Slima",
+            "hero-title": "B2B Sales & Business Development Expert",
+            "hero-desc": `"I believe that behind every ambitious company lies a story worth telling and an opportunity waiting to be discovered. That is why I strive to build bridges of trust between businesses and the opportunities that can transform their growth journey. At <span class='text-white font-bold'>G-Empire</span>, my passion goes beyond finding the right clients; it is about contributing to meaningful partnerships that create lasting impact and deliver enduring value."`,
+            "feat-strategic": "Strategic Planning",
+            "feat-b2b": "B2B Deal Closing",
+            "agency-subtitle": "THE AGENCY",
+            "agency-desc": "We are an integrated agency specialized in providing innovative business solutions and digital marketing services that put your brand at the forefront.",
+            "service-1-title": "Business Consulting",
+            "service-1-desc": "In-depth market analysis, administrative structuring, and strategic planning to increase operational efficiency and maximize profits.",
+            "service-2-title": "Social Media Management",
+            "service-2-desc": "Building a strong digital presence through advanced content strategies and professional management of paid advertising campaigns.",
+            "service-3-title": "Business Development",
+            "service-3-desc": "Opening new sales channels, building strategic partnerships, and increasing conversion rates through advanced systems.",
+            "portfolio-subtitle": "PORTFOLIO",
+            "portfolio-title": "Success Partners <br> & Clients We Served",
+            "portfolio-count": "Institutions",
+            "contact-title": "Ready to <br> Scale?",
+            "contact-desc": "Contact me directly to discuss how G-Empire can transform your business trajectory.",
+            "contact-email": "Email",
+            "contact-linkedin": "LinkedIn",
+            "contact-whatsapp": "WhatsApp",
+            "contact-whatsapp-btn": "Send instant message"
+        },
+        ar: {
+            "lang-label": "EN",
+            "nav-about": "أنا",
+            "nav-agency": "الوكالة",
+            "nav-partners": "شركاؤنا",
+            "nav-contact": "تواصل",
+            "hero-name": "أحمد سليمة",
+            "hero-title": "خبير مبيعات B2B وتطوير الأعمال",
+            "hero-desc": `"أؤمن بأن خلف كل شركة طموحة قصة تستحق أن تروى وفرصة تنتظر من يكتشفها. لذلك، أسعى جاهدًا لبناء جسور من الثقة بين الشركات والفرص التي يمكن أن تحول مسار نموها. في <span class='text-white font-bold'>G-Empire</span>، شغفي يتجاوز مجرد العثور على العملاء المناسبين؛ بل يكمن في المساهمة في شراكات حقيقية تصنع أثرًا مستدامًا وتقدم قيمة مستمرة."`,
+            "feat-strategic": "تخطيط استراتيجي",
+            "feat-b2b": "إغلاق صفقات B2B",
+            "agency-subtitle": "الوكالة",
+            "agency-desc": "نحن وكالة متكاملة متخصصة في تقديم حلول الأعمال المبتكرة وخدمات التسويق الرقمي التي تضع علامتك التجارية في الصدارة.",
+            "service-1-title": "استشارات البيزنس",
+            "service-1-desc": "تحليل دقيق للسوق، هيكلة إدارية، ووضع خطط استراتيجية لزيادة كفاءة التشغيل وتعظيم الأرباح.",
+            "service-2-title": "إدارة السوشيال ميديا",
+            "service-2-desc": "بناء حضور رقمي قوي عبر استراتيجيات محتوى متقدمة وإدارة احترافية للحملات الإعلانية الممولة.",
+            "service-3-title": "تطوير الأعمال",
+            "service-3-desc": "فتح قنوات بيعية جديدة، بناء شراكات استراتيجية، ورفع معدلات التحويل من خلال أنظمة B2B متطورة.",
+            "portfolio-subtitle": "سابقة الأعمال",
+            "portfolio-title": "شركاء النجاح <br> والشركات التي خدمناها",
+            "portfolio-count": "جهة ومؤسسة",
+            "contact-title": "جاهز للبدء <br> في التوسع؟",
+            "contact-desc": "تواصل معي مباشرة لنناقش كيف يمكن لـ G-Empire أن تحول مسار عملك.",
+            "contact-email": "البريد الإلكتروني",
+            "contact-linkedin": "لينكد إن",
+            "contact-whatsapp": "واتساب",
+            "contact-whatsapp-btn": "إرسال رسالة فورية"
+        }
+    };
+
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'ar' : 'en';
+        updateUI();
+        localStorage.setItem('g-empire-lang', currentLang);
+    }
+
+    function updateUI() {
+        const html = document.documentElement;
+        html.lang = currentLang;
+        html.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[currentLang][key]) {
+                el.innerHTML = translations[currentLang][key];
+            }
+        });
+
+        document.getElementById('lang-label').innerText = translations[currentLang]['lang-label'];
+        AOS.refresh();
+    }
+
+    window.onload = () => {
+        const savedLang = localStorage.getItem('g-empire-lang');
+        if (savedLang) {
+            currentLang = savedLang;
+            updateUI();
+        }
+
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-back'
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-black/95', 'backdrop-blur-xl', 'py-3', 'border-b', 'border-white/10');
+            } else {
+                nav.classList.remove('bg-black/95', 'backdrop-blur-xl', 'py-3', 'border-b', 'border-white/10');
+            }
+        });
+    };
+</script>
+
+</body>
+</html>
